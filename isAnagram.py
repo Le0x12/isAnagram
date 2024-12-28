@@ -32,3 +32,5 @@ def isAnagramaForDictionary():
   
 
 isAnagramaForDictionary()
+
+#Este es el codigo inicial para el programa de Anagramas
