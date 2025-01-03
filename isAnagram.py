@@ -1,5 +1,13 @@
-
+#parte 1
 def diccionarioDeAnagramas():
+  pregunta = str(input("¿quieres comparar pares de palabras?"      ))
+  if pregunta == "si":
+   print  (pares)
+  else:
+    print ("ok de todas formas gracias por interesarte,adios")
+  
+#parte 2
+
   pares = int(input("¿cuantos pares quieres comparar? "))
   diccionario = {}
 
@@ -17,6 +25,11 @@ def isAnagrama(diccionario):
       palabraUno  = key.lower()
       palabraDos  =diccionario[key].lower()
 
+      palabraUno = palabraUno.strip()
+      palabraDos = palabraDos.strip()
+
+#parte 3
+
       if palabraUno == palabraDos:
         print ("no es valida la palabra")
       else:  
@@ -32,6 +45,9 @@ def isAnagramaForDictionary():
   
 
 isAnagramaForDictionary()
+
+
+
 
 #Este es el codigo inicial para el programa de Anagramas
 #un comentario para mi primer commit
