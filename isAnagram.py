@@ -1,6 +1,7 @@
 def isAnagrama():
   pares = int(input("¿cuantos pares quieres comparar? "   ))
   diccionario = {}
+  noAnagramas = []
 
   for word in range(pares):
      key = input("ingresa una palabra " )
@@ -21,7 +22,21 @@ def isAnagrama():
          print ("\x1b[1;33m" + "*** " + palabraUno + " y " + palabraDos + " son Anagrama --"+"\033[0;m")
       else:
          print (palabraUno + " y " + palabraDos + " no son anagrama ")
+         noAnagramas.append(f"{palabraUno} - {palabraDos}")
       print("\n")
+
+with open("noAnagrama.txt", "w") as archivo:
+        for noAnagrama in noAnagramas :
+            archivo.write(noAnagrama + "\n")
+    
+print ("Los pares que no son anagramas se han guardado en 'no_anagramas.txt'")
+
+
+
+
+
+
+
 
 isAnagrama()
 
