@@ -8,7 +8,7 @@ def isAnagrama():
      key = input("ingresa una palabra " )
      value = input("ingresa otra palabra " )
      diccionario[key] = value
-  isAnagramaFile = open("isAnagramaFile.txt", "w+") 
+  isAnagramaFile = open("isAnagramaFile.txt", "a+") 
   for key in diccionario:
     if key == diccionario[key]:
       print ("no es valida la palabra")
